@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Login from './components/Auth/Login'
 import EmployeeDashboard from './components/Dashbord/EmployeeDashboard'
 import AdminDashboard from './components/Dashbord/AdminDashboard'
 import { getLocalStorage, setLocalStorage } from './utils/LocalStorage'
+import {AuthContext} from './context/AuthProvider'
 
 const App = () => {
 
@@ -19,7 +20,8 @@ const App = () => {
     }
   }
 
-   
+   const data = useContext(AuthContext)
+   console.log(data)
   
   return (
 <>

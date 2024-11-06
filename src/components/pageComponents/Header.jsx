@@ -13,9 +13,10 @@ const Header = () => {
 // }
 
 
-const logOutUser= (e)=>{
- localStorage.setItem('loggedInUser','')
- window.location.reload()
+const logOutUser= ()=>{
+ localStorage.setItem("loggedInUser",'')
+//  console.log(loggedInUser)
+ window.location.reload();
 }
 
 

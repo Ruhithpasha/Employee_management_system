@@ -67,7 +67,7 @@ const App = () => {
   const [authData, setAuthData] = useContext(AuthContext)
 
   // this line needs to be rewritten everytime the page refreshes else it gives error of type (Cannot read properties of null (reading 'employees')) every error lies in this line
-  console.log(authData)
+  // console.log(authData.employees)
 
  useEffect(() => {
   const loggedInUser = localStorage.getItem("loggedInUser")
